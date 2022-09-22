@@ -1,10 +1,6 @@
-import "../scss/app.scss";
-
-window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
-
-  const button = document.querySelector(".button");
-  button.addEventListener("click", () => {
-    alert("💣");
-  });
-});
+for(let i = 0 ; i < 5; i++){
+  const curr = document.createElement("article");
+  curr.setAttribute("class",  "message");
+  curr.innerHTML = "some content"
+  document.getElementsByTagName("body")[0].appendChild(curr);
+}
