@@ -10,15 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="main">
-    </div>
     <script>
-      
       for(let i = 0 ; i < 5; i++){
         const curr = document.createElement("article");
         curr.setAttribute("class",  "message");
         curr.innerHTML = "some content"
-        document.getElementsByClassName("main")[0].appendChild(curr);
+        document.getElementsByTagName("body")[0].appendChild(curr);
       }
     </script>
   </body>
